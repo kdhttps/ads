@@ -1,2 +1,3 @@
 Flow co.openid
      Basepath ""
+Log "@info f"
