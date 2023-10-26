@@ -65,9 +65,10 @@
 					"hasExtraData": false,
 					"configParams": "{}",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 265,
@@ -103,7 +104,13 @@
 					"comment": "",
 					"notes": "",
 					"flowfilename": "",
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "",
+							"assignedVariableName": ""
+						}
+					],
 					"callType": "Call static method",
 					"arguments": [],
 					"logMessage": "",
@@ -124,8 +131,9 @@
 					"nodeColor": "",
 					"exceptionVariableField": "",
 					"hasExtraData": false,
-					"configParams": "{}",
-					"flowname": "co.openid"
+					"configParams": "{\n  \"secret\": \"secret-save\"\n}",
+					"flowname": "co.openid",
+					"nodeIcon": "material-symbols:line-start-square"
 				},
 				"skake": false
 			},
@@ -133,7 +141,7 @@
 				"x": 65,
 				"y": 99
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 65,
 				"y": 99
