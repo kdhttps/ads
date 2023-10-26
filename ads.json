@@ -14,7 +14,9 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "co.openid": {}
+            "co.openid": {
+                "secret": "secret-save"
+            }
         },
         "name": "openid-auth"
     }
