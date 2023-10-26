@@ -13,6 +13,9 @@
             "openid-connect"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "co.openid": {}
+        },
+        "name": "openid-auth"
     }
 }
