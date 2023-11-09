@@ -19,5 +19,21 @@
             }
         },
         "name": "openid-auth"
+    },
+    "first": {
+        "projectName": "first",
+        "description": "first",
+        "type": "community",
+        "author": "kdhttps",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/kdhttps/ads",
+        "githubUri": "https://github.com/kdhttps/ads",
+        "license": "apache-2.0",
+        "lastUpdated": "1699530048158",
+        "tags": [
+            "openid-connect"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
     }
 }
