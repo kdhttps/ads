@@ -1,2 +1,4 @@
 Flow co.basic
      Basepath ""
+     Configs conf
+Log "@info log"
