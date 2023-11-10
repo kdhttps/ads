@@ -38,24 +38,5 @@
             "co.basic": {}
         },
         "name": "first"
-    },
-    "second": {
-        "projectName": "second",
-        "description": "second",
-        "type": "community",
-        "author": "kdhttps",
-        "version": "0.0.1",
-        "authorWebsite": "https://github.com/kdhttps/ads",
-        "githubUri": "https://github.com/kdhttps/ads",
-        "license": "apache-2.0",
-        "lastUpdated": "1699590222368",
-        "tags": [
-            "openid-connect"
-        ],
-        "noDirectLaunch": [],
-        "configs": {
-            "co.basic": {}
-        },
-        "name": "second"
     }
 }
