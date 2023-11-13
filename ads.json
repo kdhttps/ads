@@ -13,6 +13,9 @@
             "openid-connect"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "io.jans.inbound.oidc_code": {}
+        },
+        "name": "openid-auth"
     }
 }
