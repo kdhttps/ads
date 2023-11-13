@@ -1,25 +1,4 @@
 {
-    "openid-auth": {
-        "projectName": "openid-auth",
-        "description": "openid auth agama flow",
-        "type": "community",
-        "author": "kdhttps",
-        "version": "0.0.1",
-        "authorWebsite": "https://github.com/kdhttps/ads",
-        "githubUri": "https://github.com/kdhttps/ads",
-        "license": "apache-2.0",
-        "lastUpdated": "1698158829569",
-        "tags": [
-            "openid-connect"
-        ],
-        "noDirectLaunch": [],
-        "configs": {
-            "co.openid": {
-                "secret": "secret-save"
-            }
-        },
-        "name": "openid-auth"
-    },
     "first": {
         "projectName": "first",
         "description": "first",
