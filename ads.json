@@ -14,7 +14,6 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "io.jans.inbound.oidc_code": {},
             "": {
                 "client_id": "sdddfdf9fdfd9fd",
                 "op_server": "https://gluu.org"
