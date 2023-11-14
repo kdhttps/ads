@@ -17,7 +17,8 @@
             "": {
                 "client_id": "sdddfdf9fdfd9fd",
                 "op_server": "https://gluu.org"
-            }
+            },
+            "co.openid_code": {}
         },
         "name": "openid-auth"
     }
