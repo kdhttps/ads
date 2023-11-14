@@ -65,9 +65,10 @@
 					"hasExtraData": false,
 					"configParams": "{}",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 289,
@@ -84,8 +85,8 @@
 				"id": "Agama-start-Flow-09cf3428-9fe4-4de5-a648-457c0fc6fb2a",
 				"type": "Agama-start-Flow",
 				"position": {
-					"x": 89,
-					"y": 107
+					"x": 79,
+					"y": 149
 				},
 				"inRepeatBlock": false,
 				"agamaData": {
@@ -103,7 +104,13 @@
 					"comment": "",
 					"notes": "",
 					"flowfilename": "",
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "",
+							"assignedVariableName": ""
+						}
+					],
 					"callType": "Call static method",
 					"arguments": [],
 					"logMessage": "",
@@ -124,19 +131,20 @@
 					"nodeColor": "",
 					"exceptionVariableField": "",
 					"hasExtraData": false,
-					"configParams": "{}",
-					"flowname": "co.openid_code"
+					"configParams": "{\n  \"client_id\": \"sdfdfsdf9dfsdfsd\",\n  \"op_server\": \"https://gluu.org\"\n}",
+					"flowname": "co.openid_code",
+					"nodeIcon": "material-symbols:line-start-square"
 				},
 				"skake": false
 			},
 			"position": {
-				"x": 89,
-				"y": 107
+				"x": 79,
+				"y": 149
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
-				"x": 89,
-				"y": 107
+				"x": 79,
+				"y": 149
 			},
 			"dragging": false
 		}
