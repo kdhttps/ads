@@ -14,7 +14,11 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "io.jans.inbound.oidc_code": {}
+            "io.jans.inbound.oidc_code": {},
+            "": {
+                "client_id": "sdddfdf9fdfd9fd",
+                "op_server": "https://gluu.org"
+            }
         },
         "name": "openid-auth"
     }
