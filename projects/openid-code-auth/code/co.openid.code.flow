@@ -1,3 +1,0 @@
-Flow __________
-     Basepath ""
-authService | E = Call io.jans.as.server.service.AuthenticationService#class 
