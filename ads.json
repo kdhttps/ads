@@ -14,6 +14,9 @@
             "jans"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "agama.pw": {}
+        },
+        "name": "agama-pw"
     }
 }
