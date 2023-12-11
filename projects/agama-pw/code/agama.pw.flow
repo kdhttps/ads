@@ -9,3 +9,5 @@ Repeat 3 times max
      authResult.uid = creds.username
      // check auth response
      When authResult.success is true
+          it_oybzs = { success: true, data: { userId: authResult.uid } }
+          Finish it_oybzs
