@@ -18,5 +18,21 @@
             "agama.pw": {}
         },
         "name": "agama-pw"
+    },
+    "test": {
+        "projectName": "test",
+        "description": "test",
+        "type": "community",
+        "author": "kdhttps",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/kdhttps/ads",
+        "githubUri": "https://github.com/kdhttps/ads",
+        "license": "apache-2.0",
+        "lastUpdated": "1702993470032",
+        "tags": [
+            "test"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
     }
 }
