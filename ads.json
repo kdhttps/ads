@@ -14,5 +14,21 @@
         ],
         "noDirectLaunch": [],
         "configs": {}
+    },
+    "gluu2": {
+        "projectName": "gluu2",
+        "description": "gluu2",
+        "type": "community",
+        "author": "kdhttps",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/kdhttps/ads",
+        "githubUri": "https://github.com/kdhttps/ads",
+        "license": "apache-2.0",
+        "lastUpdated": "1722532186811",
+        "tags": [
+            "openid-connect"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
     }
 }
