@@ -1,0 +1,9 @@
+{
+    "c2d646e05dab84531b99ed721e7fa7958177d01e5c23": {
+        "name": "gluulocalads",
+        "description": "gluu local ads",
+        "policies": {},
+        "identity_source": {},
+        "schema": ""
+    }
+}
