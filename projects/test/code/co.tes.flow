@@ -1,2 +1,3 @@
 Flow co.tes
-     Basepath ""
+     Basepath "mydir"
+Log "@info info"
