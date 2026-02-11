@@ -33,21 +33,5 @@
         ],
         "noDirectLaunch": [],
         "configs": {}
-    },
-    "test3": {
-        "projectName": "test3",
-        "description": "fgfg",
-        "type": "community",
-        "author": "kdhttps",
-        "version": "0.0.1",
-        "authorWebsite": "https://github.com/kdhttps/ads",
-        "githubUri": "https://github.com/kdhttps/ads",
-        "license": "apache-2.0",
-        "lastUpdated": "1770797139972",
-        "tags": [
-            "openid-connect"
-        ],
-        "noDirectLaunch": [],
-        "configs": {}
     }
 }
