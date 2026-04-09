@@ -1,2 +1,4 @@
 Flow co.basic
      Basepath ""
+// Info log node
+Log "@info info log node"
