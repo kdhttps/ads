@@ -4,3 +4,7 @@ varFirst = "first"
 varSecond = "second"
 // info log
 Log "@info info"
+// varFirst log
+Log "@info varFirst log"
+// varSecond log
+Log "@info varSecond log"
