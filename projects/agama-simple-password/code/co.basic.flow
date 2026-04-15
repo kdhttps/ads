@@ -1,4 +1,6 @@
 Flow co.basic
      Basepath ""
-// Info log node
-Log "@info info log node"
+varFirst = "first"
+varSecond = "second"
+// info log
+Log "@info info"
