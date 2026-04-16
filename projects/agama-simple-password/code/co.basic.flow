@@ -1,2 +1,5 @@
 Flow co.basic
      Basepath ""
+varFirst = 1
+varSecond = 2
+Log "@info info log"
