@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "id": "startNode-866b56d9-ad00-469e-9af4-37a9b7ebc5d1",
+      "type": "startNode",
+      "sourcePosition": "right",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "deletable": false,
+      "data": {
+        "id": "startNode-866b56d9-ad00-469e-9af4-37a9b7ebc5d1",
+        "type": "startNode",
+        "position": {
+          "x": 30,
+          "y": 40
+        },
+        "agamaData": {
+          "isTopLevelFlow": true,
+          "basepath": "",
+          "configParams": "{}",
+          "nodeIcon": "material-symbols:line-start-square",
+          "timeout": "",
+          "inputs": "",
+          "configs": "",
+          "flowname": "co.basic",
+          "displayName": "basic",
+          "creationDate": "16/04/2026",
+          "hasComment": true,
+          "comment": ""
+        }
+      }
+    }
+  ]
+}
