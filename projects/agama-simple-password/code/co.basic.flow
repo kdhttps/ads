@@ -5,3 +5,5 @@ varSecond = 2
 varName = "kiran"
 // info log
 Log "@info info log"
+Log "@info case1 log"
+Log "@info varFirst log"
