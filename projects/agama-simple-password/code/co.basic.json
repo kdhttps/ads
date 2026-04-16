@@ -1,36 +1,168 @@
 {
-  "nodes": [
-    {
-      "id": "startNode-7c3bac27-09d5-420c-ba63-9dcb53ae3d7a",
-      "type": "startNode",
-      "sourcePosition": "right",
-      "position": {
-        "x": 30,
-        "y": 30
-      },
-      "deletable": false,
-      "data": {
-        "id": "startNode-7c3bac27-09d5-420c-ba63-9dcb53ae3d7a",
-        "type": "startNode",
-        "position": {
-          "x": 30,
-          "y": 40
-        },
-        "agamaData": {
-          "isTopLevelFlow": true,
-          "basepath": "",
-          "configParams": "{}",
-          "nodeIcon": "material-symbols:line-start-square",
-          "timeout": "",
-          "inputs": "",
-          "configs": "",
-          "flowname": "co.basic",
-          "displayName": "basic flow",
-          "creationDate": "16/04/2026",
-          "hasComment": true,
-          "comment": ""
-        }
-      }
-    }
-  ]
+	"nodes": [
+		{
+			"id": "startNode-7c3bac27-09d5-420c-ba63-9dcb53ae3d7a",
+			"type": "startNode",
+			"sourcePosition": "right",
+			"position": {
+				"x": 83,
+				"y": 147
+			},
+			"deletable": false,
+			"data": {
+				"id": "startNode-7c3bac27-09d5-420c-ba63-9dcb53ae3d7a",
+				"type": "startNode",
+				"position": {
+					"x": 30,
+					"y": 40
+				},
+				"agamaData": {
+					"isTopLevelFlow": true,
+					"basepath": "",
+					"configParams": "{}",
+					"nodeIcon": "material-symbols:line-start-square",
+					"timeout": "",
+					"inputs": "",
+					"configs": "",
+					"flowname": "co.basic",
+					"displayName": "basic flow",
+					"creationDate": "16/04/2026",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "assignmentNode-c6fa6341-77f7-4ff3-b1c4-7e7da07910cc",
+			"type": "assignmentNode",
+			"position": {
+				"x": 333,
+				"y": 147
+			},
+			"data": {
+				"id": "assignmentNode-c6fa6341-77f7-4ff3-b1c4-7e7da07910cc",
+				"type": "assignmentNode",
+				"position": {
+					"x": 333,
+					"y": 147
+				},
+				"previousNodeId": "startNode-7c3bac27-09d5-420c-ba63-9dcb53ae3d7a",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "1",
+							"assignedVariableName": "varFirst"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "2",
+							"assignedVariableName": "varSecond"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"kiran\"",
+							"assignedVariableName": "varName"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "Vairables",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": false
+		},
+		{
+			"id": "logNode-21d2c234-9dd0-4a9d-8b90-6f24c127de11",
+			"type": "logNode",
+			"position": {
+				"x": 583,
+				"y": 147
+			},
+			"data": {
+				"id": "logNode-21d2c234-9dd0-4a9d-8b90-6f24c127de11",
+				"type": "logNode",
+				"position": {
+					"x": 583,
+					"y": 147
+				},
+				"previousNodeId": "assignmentNode-c6fa6341-77f7-4ff3-b1c4-7e7da07910cc",
+				"agamaData": {
+					"logMessage": "\"info log\"",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "info log",
+					"hasComment": true,
+					"comment": "info log"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": true
+		}
+	],
+	"edges": [
+		{
+			"id": "startNode-7c3bac27-09d5-420c-ba63-9dcb53ae3d7a-assignmentNode-c6fa6341-77f7-4ff3-b1c4-7e7da07910cc",
+			"type": "default",
+			"source": "startNode-7c3bac27-09d5-420c-ba63-9dcb53ae3d7a",
+			"target": "assignmentNode-c6fa6341-77f7-4ff3-b1c4-7e7da07910cc",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_startNode-7c3bac27-09d5-420c-ba63-9dcb53ae3d7a"
+		},
+		{
+			"id": "assignmentNode-c6fa6341-77f7-4ff3-b1c4-7e7da07910cc-logNode-21d2c234-9dd0-4a9d-8b90-6f24c127de11",
+			"type": "default",
+			"source": "assignmentNode-c6fa6341-77f7-4ff3-b1c4-7e7da07910cc",
+			"target": "logNode-21d2c234-9dd0-4a9d-8b90-6f24c127de11",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-c6fa6341-77f7-4ff3-b1c4-7e7da07910cc"
+		}
+	],
+	"viewport": {
+		"x": 25.085813539501856,
+		"y": 24.37218496425652,
+		"zoom": 0.8668186502926631
+	}
 }
