@@ -34,8 +34,7 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "co.acme.password": {},
-            "co.basic": {}
+            "co.acme.password": {}
         },
         "name": "agama-simple-password"
     }
