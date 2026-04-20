@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "id": "startNode-8b44f173-4a97-4ad1-b63f-708bfe39e85b",
+      "type": "startNode",
+      "sourcePosition": "right",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "deletable": false,
+      "data": {
+        "id": "startNode-8b44f173-4a97-4ad1-b63f-708bfe39e85b",
+        "type": "startNode",
+        "position": {
+          "x": 30,
+          "y": 40
+        },
+        "agamaData": {
+          "isTopLevelFlow": true,
+          "basepath": "",
+          "configParams": "{}",
+          "nodeIcon": "material-symbols:line-start-square",
+          "timeout": "",
+          "inputs": "",
+          "configs": "",
+          "flowname": "co.otp",
+          "displayName": "OTP auth",
+          "creationDate": "20/04/2026",
+          "hasComment": true,
+          "comment": ""
+        }
+      }
+    }
+  ]
+}
