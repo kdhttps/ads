@@ -4,10 +4,14 @@ varFirst = 1
 varSecond = 2
 Log "@info info log"
 Match matchT to
-case1
-     Log "@info case1 log"
-varFirst
-     Log "@info varFirst log"
+     case1
+          Log "@info case1 log"
+     varFirst
+          Log "@info varFirst log"
+     varSecond
+          Log "@info varsecond log"
+     case4
+          Log "@info case4 log"
 Otherwise
      Log "@info otherwise log"
 Log "@info continue log"
