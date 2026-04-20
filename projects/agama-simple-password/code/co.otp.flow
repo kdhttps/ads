@@ -10,6 +10,3 @@ Match matchT to
           Log "@info varSecond log"
      Case3
           Log "@info Case3 log"
-Otherwise
-     Log "@info otherwise block"
-Log "@info continue log"
