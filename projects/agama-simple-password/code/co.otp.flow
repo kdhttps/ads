@@ -1,2 +1,15 @@
 Flow co.otp
      Basepath ""
+varFirst = 1
+varSecond = 2
+// Match block
+Match matchT to
+     varFirst
+          Log "@info varFirst log"
+     varSecond
+          Log "@info varSecond log"
+     Case3
+          Log "@info Case3 log"
+Otherwise
+     Log "@info otherwise block"
+Log "@info continue log"
