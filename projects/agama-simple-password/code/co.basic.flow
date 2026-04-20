@@ -12,6 +12,11 @@ Match matchT to
           Log "@info varsecond log"
      case4
           Log "@info case4 log"
+          When 
+               Log "@info when condition match"
+          Otherwise
+               Log "@info when otherwise"
+          Log "@info when continue"
 Otherwise
      Log "@info otherwise log"
 Log "@info continue log"
