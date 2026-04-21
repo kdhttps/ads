@@ -9,6 +9,12 @@ Match MAtchT to
           Log "@info varSecond log"
      Case3
           Log "@info case3 log"
+     1
+          Log "@info log 1"
+     "1"
+          Log "@info string log"
+     s[0]
+          Log "@info array log"
 Otherwise
      Log "@info otherwise log"
 Log "@info continune log"
