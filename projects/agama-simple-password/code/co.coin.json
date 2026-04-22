@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "id": "startNode-b9e9d283-d9c2-4d75-bffc-c1a2d91759b3",
+      "type": "startNode",
+      "sourcePosition": "right",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "deletable": false,
+      "data": {
+        "id": "startNode-b9e9d283-d9c2-4d75-bffc-c1a2d91759b3",
+        "type": "startNode",
+        "position": {
+          "x": 30,
+          "y": 40
+        },
+        "agamaData": {
+          "isTopLevelFlow": true,
+          "basepath": "",
+          "configParams": "{}",
+          "nodeIcon": "material-symbols:line-start-square",
+          "timeout": "",
+          "inputs": "",
+          "configs": "",
+          "flowname": "co.coin",
+          "displayName": "coin app",
+          "creationDate": "22/04/2026",
+          "hasComment": true,
+          "comment": ""
+        }
+      }
+    }
+  ]
+}
