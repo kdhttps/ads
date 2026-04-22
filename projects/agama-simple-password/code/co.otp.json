@@ -131,7 +131,7 @@
 				"width": 250,
 				"height": 294
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -408,7 +408,32 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
+		},
+		{
+			"id": "noteNode-0e49e94f-24ec-424f-aae1-6ff5a7336810",
+			"position": {
+				"x": 212.08420635267373,
+				"y": 315.0929695907615
+			},
+			"type": "noteNode",
+			"data": {
+				"id": "noteNode-0e49e94f-24ec-424f-aae1-6ff5a7336810",
+				"type": "noteNode",
+				"agamaData": {
+					"noteText": "help text"
+				},
+				"position": {
+					"x": 300,
+					"y": 260
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 30
+			},
+			"selected": false,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -604,8 +629,8 @@
 		}
 	],
 	"viewport": {
-		"x": 80.73767383419172,
-		"y": 80.3082076009371,
-		"zoom": 0.6838259353331871
+		"x": 81.2623629830793,
+		"y": 77.76425910172762,
+		"zoom": 0.8112739467987033
 	}
 }
