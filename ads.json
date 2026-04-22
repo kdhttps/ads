@@ -36,7 +36,8 @@
         "configs": {
             "co.acme.password": {},
             "co.basic": {},
-            "co.otp": {}
+            "co.otp": {},
+            "co.coin": {}
         },
         "name": "agama-simple-password"
     }
