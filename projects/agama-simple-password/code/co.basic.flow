@@ -9,5 +9,5 @@ Match matchT to
           Log "@info a array log"
 Otherwise
      Log "@info otherwise log"
-// continue log
-Log "@info continue log"
+// next log
+Log "@info next block"
