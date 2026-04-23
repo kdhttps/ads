@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "id": "startNode-cfb80021-aa4a-44fd-8dc4-7dbc0d85f391",
+      "type": "startNode",
+      "sourcePosition": "right",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "deletable": false,
+      "data": {
+        "id": "startNode-cfb80021-aa4a-44fd-8dc4-7dbc0d85f391",
+        "type": "startNode",
+        "position": {
+          "x": 30,
+          "y": 40
+        },
+        "agamaData": {
+          "isTopLevelFlow": true,
+          "basepath": "",
+          "configParams": "{}",
+          "nodeIcon": "material-symbols:line-start-square",
+          "timeout": "",
+          "inputs": "",
+          "configs": "",
+          "flowname": "co.coin",
+          "displayName": "coin",
+          "creationDate": "23/04/2026",
+          "hasComment": true,
+          "comment": ""
+        }
+      }
+    }
+  ]
+}
