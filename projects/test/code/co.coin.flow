@@ -1,2 +1,7 @@
 Flow co.coin
      Basepath ""
+Match matfch to
+     case1
+          Log "@info inof"
+Otherwise
+     Log "@info inof"
