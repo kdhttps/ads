@@ -7,10 +7,6 @@ Match matchT to
           Log "@info case1 log"
      a[0]
           Log "@info a array log"
-     a
-          Log "@info only a log"
-     "1"
-          Log "@info string 1 log"
 Otherwise
      Log "@info otherwise log"
 // continue log
