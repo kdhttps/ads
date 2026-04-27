@@ -1,2 +1,15 @@
 Flow co.basic
      Basepath ""
+Log "@info info"
+Match matchT to
+     case1
+          Log "@info case1 log"
+     a[0]
+          Log "@info a array"
+     "str"
+          Log "@info str"
+     obj.a
+          Log "@info obj.a"
+Otherwise
+     Log "@info otherwise"
+Log "@info next"
