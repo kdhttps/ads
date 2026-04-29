@@ -38,7 +38,8 @@
             "co.acme.password": {},
             "co.basic": {},
             "co.otp": {},
-            "co.coin": {}
+            "co.coin": {},
+            "co.iterate": {}
         },
         "name": "agama-simple-password"
     }
