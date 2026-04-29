@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "id": "startNode-d9498480-a78d-4a5f-9393-d62c87896687",
+      "type": "startNode",
+      "sourcePosition": "right",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "deletable": false,
+      "data": {
+        "id": "startNode-d9498480-a78d-4a5f-9393-d62c87896687",
+        "type": "startNode",
+        "position": {
+          "x": 30,
+          "y": 40
+        },
+        "agamaData": {
+          "isTopLevelFlow": true,
+          "basepath": "",
+          "configParams": "{}",
+          "nodeIcon": "material-symbols:line-start-square",
+          "timeout": "",
+          "inputs": "",
+          "configs": "",
+          "flowname": "co.iterate",
+          "displayName": "iterate flow",
+          "creationDate": "29/04/2026",
+          "hasComment": true,
+          "comment": ""
+        }
+      }
+    }
+  ]
+}
