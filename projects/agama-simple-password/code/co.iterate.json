@@ -87,7 +87,7 @@
 				"agamaData": {
 					"iterateOn": "list",
 					"iterateAs": "",
-					"iterateResult": "result",
+					"iterateResult": "",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
@@ -172,7 +172,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -254,8 +254,8 @@
 		}
 	],
 	"viewport": {
-		"x": 97.92074272638467,
-		"y": 142.09815960781404,
-		"zoom": 0.7368721880388737
+		"x": 80.53511860838023,
+		"y": 114.680538139063,
+		"zoom": 0.6513055001423363
 	}
 }
