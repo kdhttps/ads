@@ -1,3 +1,6 @@
 Flow co.iterate
      Basepath ""
 Log "@info info"
+result = Iterate over list using iterateAS
+     Log "@info loop content"
+Log "@info continue"
