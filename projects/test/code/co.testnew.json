@@ -54,7 +54,7 @@
 				},
 				"previousNodeId": "startNode-a80db9eb-4ee8-4519-a686-709019a3e1cd",
 				"agamaData": {
-					"logMessage": "\"log'",
+					"logMessage": "\"log\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -66,8 +66,8 @@
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 123
+				"width": 168,
+				"height": 120
 			},
 			"selected": true
 		}
