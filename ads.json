@@ -15,7 +15,8 @@
         "noDirectLaunch": [],
         "configs": {
             "co.tes": {},
-            "co.coin": {}
+            "co.coin": {},
+            "co.testnew": {}
         },
         "name": "test"
     },
