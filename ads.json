@@ -39,7 +39,8 @@
             "co.basic": {},
             "co.otp": {},
             "co.coin": {},
-            "co.iterate": {}
+            "co.iterate": {},
+            "co.test": {}
         },
         "name": "agama-simple-password"
     }
