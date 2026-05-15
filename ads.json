@@ -59,6 +59,7 @@
             "openid-connect"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {},
+        "name": "test22"
     }
 }
