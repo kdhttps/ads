@@ -44,5 +44,21 @@
             "co.test": {}
         },
         "name": "agama-simple-password"
+    },
+    "test22": {
+        "projectName": "test22",
+        "description": "ttes",
+        "type": "community",
+        "author": "kdhttps",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/kdhttps/ads",
+        "githubUri": "https://github.com/kdhttps/ads",
+        "license": "apache-2.0",
+        "lastUpdated": "1778828908535",
+        "tags": [
+            "openid-connect"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
     }
 }
