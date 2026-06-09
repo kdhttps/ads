@@ -61,21 +61,5 @@
         "noDirectLaunch": [],
         "configs": {},
         "name": "test22"
-    },
-    "crypto-pass": {
-        "projectName": "crypto-pass",
-        "description": "crypto password",
-        "type": "community",
-        "author": "kdhttps",
-        "version": "0.0.1",
-        "authorWebsite": "https://github.com/kdhttps/ads",
-        "githubUri": "https://github.com/kdhttps/ads",
-        "license": "apache-2.0",
-        "lastUpdated": "1780992304718",
-        "tags": [
-            "openid-connect"
-        ],
-        "noDirectLaunch": [],
-        "configs": {}
     }
 }
