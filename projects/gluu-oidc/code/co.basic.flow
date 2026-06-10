@@ -2,3 +2,5 @@ Flow co.basic
      Basepath ""
 // info logs
 Log "@info info log"
+// Test Assign
+assign = "hello"
