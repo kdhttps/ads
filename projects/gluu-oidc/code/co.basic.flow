@@ -4,3 +4,5 @@ Flow co.basic
 Log "@info info log"
 // Test Assign
 assign = "hello"
+// log desc
+Log "@info second log"
