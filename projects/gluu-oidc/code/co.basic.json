@@ -98,7 +98,7 @@
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "Assign",
+					"displayName": "Assign Node",
 					"hasComment": true,
 					"comment": "Test Assign"
 				}
@@ -107,7 +107,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-28aa15fd-9c67-4523-8b8b-91010dcfb2ac",
@@ -140,7 +140,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -203,8 +203,8 @@
 		}
 	],
 	"viewport": {
-		"x": 224.500914109476,
-		"y": 128.0082308572195,
-		"zoom": 0.6534245735369266
+		"x": 144.67697999937337,
+		"y": 111.94582389531122,
+		"zoom": 0.6706273136201123
 	}
 }
