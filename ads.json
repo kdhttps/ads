@@ -59,5 +59,21 @@
             "co.basic": {}
         },
         "name": "gluu-oidc"
+    },
+    "test-new": {
+        "projectName": "test-new",
+        "description": "ddgh",
+        "type": "community",
+        "author": "kdhttps",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/kdhttps/ads",
+        "githubUri": "https://github.com/kdhttps/ads",
+        "license": "apache-2.0",
+        "lastUpdated": "1782284432312",
+        "tags": [
+            "jans"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
     }
 }
