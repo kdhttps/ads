@@ -59,5 +59,21 @@
         "noDirectLaunch": [],
         "configs": {},
         "name": "test"
+    },
+    "test2": {
+        "projectName": "test2",
+        "description": "test two",
+        "type": "community",
+        "author": "kdhttps",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/kdhttps/ads",
+        "githubUri": "https://github.com/kdhttps/ads",
+        "license": "Apache 2",
+        "lastUpdated": "1783072368404",
+        "tags": [
+            "test"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
     }
 }
