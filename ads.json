@@ -42,5 +42,21 @@
             "co.basic": {}
         },
         "name": "gluu-oidc"
+    },
+    "test": {
+        "projectName": "test",
+        "description": "test",
+        "type": "community",
+        "author": "kdhttps",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/kdhttps/ads",
+        "githubUri": "https://github.com/kdhttps/ads",
+        "license": "Apache 2",
+        "lastUpdated": "1783071679541",
+        "tags": [
+            "openid-connect"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
     }
 }
