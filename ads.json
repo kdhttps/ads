@@ -45,7 +45,7 @@
     },
     "test": {
         "projectName": "test",
-        "description": "test",
+        "description": "test desc",
         "type": "community",
         "author": "kdhttps",
         "version": "0.0.1",
@@ -57,6 +57,7 @@
             "openid-connect"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {},
+        "name": "test"
     }
 }
