@@ -4,3 +4,4 @@ Log "@info info"
 Iterate over list using iterateAS
      Log "@info loop content"
 Log "@info continue"
+a1 = 10
