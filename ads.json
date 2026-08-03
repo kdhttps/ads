@@ -23,24 +23,5 @@
             "co.test": {}
         },
         "name": "agama-simple-password"
-    },
-    "gluu-oidc": {
-        "projectName": "gluu-oidc",
-        "description": "gluu oidc",
-        "type": "community",
-        "author": "kdhttps",
-        "version": "0.0.1",
-        "authorWebsite": "https://github.com/kdhttps/ads",
-        "githubUri": "https://github.com/kdhttps/ads",
-        "license": "apache-2.0",
-        "lastUpdated": "1781004983884",
-        "tags": [
-            "openid-connect"
-        ],
-        "noDirectLaunch": [],
-        "configs": {
-            "co.basic": {}
-        },
-        "name": "gluu-oidc"
     }
 }
