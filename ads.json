@@ -23,5 +23,21 @@
             "co.test": {}
         },
         "name": "agama-simple-password"
+    },
+    "tst": {
+        "projectName": "tst",
+        "description": "tst",
+        "type": "community",
+        "author": "kdhttps",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/kdhttps/ads",
+        "githubUri": "https://github.com/kdhttps/ads",
+        "license": "Apache 2",
+        "lastUpdated": "1791526920535",
+        "tags": [
+            "openid-connect"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
     }
 }
