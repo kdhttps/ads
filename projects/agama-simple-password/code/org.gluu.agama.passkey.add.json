@@ -1,36 +1,1291 @@
 {
-  "nodes": [
-    {
-      "id": "startNode-97b57395-108d-4cfa-8b05-cf7e9a1c341a",
-      "type": "startNode",
-      "sourcePosition": "right",
-      "position": {
-        "x": 30,
-        "y": 30
-      },
-      "deletable": false,
-      "data": {
-        "id": "startNode-97b57395-108d-4cfa-8b05-cf7e9a1c341a",
-        "type": "startNode",
-        "position": {
-          "x": 30,
-          "y": 40
-        },
-        "agamaData": {
-          "isTopLevelFlow": true,
-          "basepath": "",
-          "configParams": "{}",
-          "nodeIcon": "material-symbols:line-start-square",
-          "timeout": "",
-          "inputs": "",
-          "configs": "",
-          "flowname": "org.gluu.agama.passkey.add",
-          "displayName": "add",
-          "creationDate": "26/10/2026",
-          "hasComment": true,
-          "comment": ""
-        }
-      }
-    }
-  ]
+	"nodes": [
+		{
+			"id": "startNode-3ad285be-8d2f-4408-80c3-c551ca8464eb",
+			"type": "startNode",
+			"sourcePosition": "right",
+			"position": {
+				"x": 30,
+				"y": 40
+			},
+			"deletable": false,
+			"data": {
+				"id": "startNode-3ad285be-8d2f-4408-80c3-c551ca8464eb",
+				"type": "startNode",
+				"position": {
+					"x": 30,
+					"y": 40
+				},
+				"agamaData": {
+					"isTopLevelFlow": true,
+					"basepath": "",
+					"configParams": "{}",
+					"nodeIcon": "material-symbols:line-start-square",
+					"timeout": "",
+					"inputs": "userData",
+					"configs": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Flow that takes care of registering a new Passkey",
+					"flowname": "org.gluu.agama.passkey.add",
+					"flowName": "org.gluu.agama.passkey.add"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "assignmentNode-ba6afe09-4572-4300-b9c2-c5ce64263b36",
+			"type": "assignmentNode",
+			"position": {
+				"x": 280,
+				"y": 40
+			},
+			"data": {
+				"id": "assignmentNode-ba6afe09-4572-4300-b9c2-c5ce64263b36",
+				"type": "assignmentNode",
+				"position": {
+					"x": 280,
+					"y": 40
+				},
+				"previousNodeId": "startNode-3ad285be-8d2f-4408-80c3-c551ca8464eb",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "userData.inum",
+							"assignedVariableName": "inum"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Set \"inum\" obtained from userData"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "callNode-18dad2da-25fc-4f15-9834-70d64889eb5f",
+			"type": "callNode",
+			"position": {
+				"x": 530,
+				"y": 40
+			},
+			"data": {
+				"id": "callNode-18dad2da-25fc-4f15-9834-70d64889eb5f",
+				"type": "callNode",
+				"position": {
+					"x": 530,
+					"y": 40
+				},
+				"previousNodeId": "assignmentNode-ba6afe09-4572-4300-b9c2-c5ce64263b36",
+				"agamaData": {
+					"javaClassName": "org.gluu.agama.passkey.enroll.FidoEnroller",
+					"javaMethodName": "",
+					"javaVariableName": "",
+					"exceptionVariableField": "",
+					"callType": "Create an instance",
+					"arguments": [],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Get Instance FidoEnroller",
+					"asssignedVariableName": "fidoEnroller"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "assignmentNode-b5f61e1f-9c54-41e4-a998-d5f5fc3670cd",
+			"type": "assignmentNode",
+			"position": {
+				"x": 780,
+				"y": 40
+			},
+			"data": {
+				"id": "assignmentNode-b5f61e1f-9c54-41e4-a998-d5f5fc3670cd",
+				"type": "assignmentNode",
+				"position": {
+					"x": 780,
+					"y": 40
+				},
+				"previousNodeId": "callNode-18dad2da-25fc-4f15-9834-70d64889eb5f",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{ attestation: \"{}\", isAttestation: false, showError: false, errorTitle: \"\", errorMessage: \"\" }",
+							"assignedVariableName": "obj"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Declaration of the variable \"obj\" with initial data"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "repeatNode-085372ff-15da-4057-9d16-54ba4b0ca35c",
+			"type": "repeatNode",
+			"position": {
+				"x": 1030,
+				"y": 40
+			},
+			"data": {
+				"id": "repeatNode-085372ff-15da-4057-9d16-54ba4b0ca35c",
+				"type": "repeatNode",
+				"position": {
+					"x": 1030,
+					"y": 40
+				},
+				"previousNodeId": "assignmentNode-b5f61e1f-9c54-41e4-a998-d5f5fc3670cd",
+				"agamaData": {
+					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
+					"maxIteration": "5",
+					"maxIterationVariableName": "",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "rrfNode-ebb40f46-2a36-495c-94cb-bff9eae3d740",
+			"type": "rrfNode",
+			"position": {
+				"x": 1280,
+				"y": 240
+			},
+			"data": {
+				"id": "rrfNode-ebb40f46-2a36-495c-94cb-bff9eae3d740",
+				"type": "rrfNode",
+				"position": {
+					"x": 1280,
+					"y": 240
+				},
+				"previousNodeId": "repeatNode-085372ff-15da-4057-9d16-54ba4b0ca35c",
+				"branching": "repeat",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "ph:globe-simple",
+					"templatePath": "passkey-add.ftlh",
+					"asssignedVariableName": "addDeviceForm",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Load passkey-add.ftlh page",
+					"arguments": "obj"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "whenNode-e86f606c-c99b-4bfd-9a29-70c63bbeaba9",
+			"type": "whenNode",
+			"position": {
+				"x": 1530,
+				"y": 240
+			},
+			"data": {
+				"id": "whenNode-e86f606c-c99b-4bfd-9a29-70c63bbeaba9",
+				"type": "whenNode",
+				"position": {
+					"x": 1530,
+					"y": 240
+				},
+				"previousNodeId": "rrfNode-ebb40f46-2a36-495c-94cb-bff9eae3d740",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "addDeviceForm.addPasskeyBtn",
+							"operator": "is",
+							"dataValue": "\"\"",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 110,
+				"height": 59
+			}
+		},
+		{
+			"id": "callNode-82f696ec-dfdf-4f6b-8d41-a02cc8d80dc4",
+			"type": "callNode",
+			"position": {
+				"x": 1780,
+				"y": 440
+			},
+			"data": {
+				"id": "callNode-82f696ec-dfdf-4f6b-8d41-a02cc8d80dc4",
+				"type": "callNode",
+				"position": {
+					"x": 1780,
+					"y": 440
+				},
+				"previousNodeId": "whenNode-e86f606c-c99b-4bfd-9a29-70c63bbeaba9",
+				"branching": "success",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "getAttestationMessage",
+					"javaVariableName": "fidoEnroller",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"inum"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Invoke the method to initiate passkey registration",
+					"asssignedVariableName": "detestable"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "assignmentNode-85d1da27-039e-4496-b09e-7a9e01162617",
+			"type": "assignmentNode",
+			"position": {
+				"x": 2030,
+				"y": 440
+			},
+			"data": {
+				"id": "assignmentNode-85d1da27-039e-4496-b09e-7a9e01162617",
+				"type": "assignmentNode",
+				"position": {
+					"x": 2030,
+					"y": 440
+				},
+				"previousNodeId": "callNode-82f696ec-dfdf-4f6b-8d41-a02cc8d80dc4",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "obj.isAttestation"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "detestable",
+							"assignedVariableName": "obj.attestation"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "obj.showError"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Show registration flow"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "whenNode-505a0094-c14f-4e8c-be8b-751c7a18bcc9",
+			"type": "whenNode",
+			"position": {
+				"x": 1780,
+				"y": 240
+			},
+			"data": {
+				"id": "whenNode-505a0094-c14f-4e8c-be8b-751c7a18bcc9",
+				"type": "whenNode",
+				"position": {
+					"x": 1780,
+					"y": 240
+				},
+				"previousNodeId": "whenNode-e86f606c-c99b-4bfd-9a29-70c63bbeaba9",
+				"branching": "continue",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "addDeviceForm.skipped",
+							"operator": "is",
+							"dataValue": "\"skipped\"",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 110,
+				"height": 59
+			}
+		},
+		{
+			"id": "assignmentNode-762c2c44-07ff-4d90-9ace-6bf8ae8ca7af",
+			"type": "assignmentNode",
+			"position": {
+				"x": 2030,
+				"y": 640
+			},
+			"data": {
+				"id": "assignmentNode-762c2c44-07ff-4d90-9ace-6bf8ae8ca7af",
+				"type": "assignmentNode",
+				"position": {
+					"x": 2030,
+					"y": 640
+				},
+				"previousNodeId": "whenNode-505a0094-c14f-4e8c-be8b-751c7a18bcc9",
+				"branching": "success",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "obj.isAttestation"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "obj.showError"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Passkey registration failed.\"",
+							"assignedVariableName": "obj.errorTitle"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "addDeviceForm.errorMessage",
+							"assignedVariableName": "obj.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Process cancellation error displayed"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "whenNode-d9cc2399-91bc-4949-8d37-f033df3f402f",
+			"type": "whenNode",
+			"position": {
+				"x": 2030,
+				"y": 240
+			},
+			"data": {
+				"id": "whenNode-d9cc2399-91bc-4949-8d37-f033df3f402f",
+				"type": "whenNode",
+				"position": {
+					"x": 2030,
+					"y": 240
+				},
+				"previousNodeId": "whenNode-505a0094-c14f-4e8c-be8b-751c7a18bcc9",
+				"branching": "continue",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "addDeviceForm.tokenResponse",
+							"operator": "is not",
+							"dataValue": "\"\"",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 110,
+				"height": 59
+			}
+		},
+		{
+			"id": "callNode-1ed62280-f5e1-4450-99f5-b9672010526a",
+			"type": "callNode",
+			"position": {
+				"x": 2280,
+				"y": 840
+			},
+			"data": {
+				"id": "callNode-1ed62280-f5e1-4450-99f5-b9672010526a",
+				"type": "callNode",
+				"position": {
+					"x": 2280,
+					"y": 840
+				},
+				"previousNodeId": "whenNode-d9cc2399-91bc-4949-8d37-f033df3f402f",
+				"branching": "success",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "verifyRegistration",
+					"javaVariableName": "fidoEnroller",
+					"exceptionVariableField": "E",
+					"callType": "Call method on instance",
+					"arguments": [
+						"inum",
+						"addDeviceForm.tokenResponse"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Invoke method to verify passkey registration",
+					"asssignedVariableName": "key"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "whenNode-f4dc3df0-9610-40da-ae22-757bec2d04e0",
+			"type": "whenNode",
+			"position": {
+				"x": 2530,
+				"y": 840
+			},
+			"data": {
+				"id": "whenNode-f4dc3df0-9610-40da-ae22-757bec2d04e0",
+				"type": "whenNode",
+				"position": {
+					"x": 2530,
+					"y": 840
+				},
+				"previousNodeId": "callNode-1ed62280-f5e1-4450-99f5-b9672010526a",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "E",
+							"operator": "is",
+							"dataValue": "null",
+							"combinator": "and"
+						},
+						{
+							"variable": "key",
+							"operator": "is not",
+							"dataValue": "null",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 110,
+				"height": 59
+			}
+		},
+		{
+			"id": "triggerNode-25a5060c-cdda-495b-bf64-64317ffe530e",
+			"type": "triggerNode",
+			"position": {
+				"x": 2780,
+				"y": 1040
+			},
+			"data": {
+				"id": "triggerNode-25a5060c-cdda-495b-bf64-64317ffe530e",
+				"type": "triggerNode",
+				"position": {
+					"x": 2780,
+					"y": 1040
+				},
+				"previousNodeId": "whenNode-f4dc3df0-9610-40da-ae22-757bec2d04e0",
+				"branching": "success",
+				"agamaData": {
+					"nodeIcon": "fluent-mdl2:trigger-approval",
+					"flowFileName": "org.gluu.agama.passkey.nickname",
+					"arguments": [
+						"key",
+						"userData"
+					],
+					"asssignedVariableName": "nicknameTrigger",
+					"exceptionVariableField": "",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Flow to assign a nickname to the registered passkey",
+					"overrides": []
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "assignmentNode-0bf63689-2a14-4e2b-b737-bdaf53e913ba",
+			"type": "assignmentNode",
+			"position": {
+				"x": 3030,
+				"y": 1040
+			},
+			"data": {
+				"id": "assignmentNode-0bf63689-2a14-4e2b-b737-bdaf53e913ba",
+				"type": "assignmentNode",
+				"position": {
+					"x": 3030,
+					"y": 1040
+				},
+				"previousNodeId": "triggerNode-25a5060c-cdda-495b-bf64-64317ffe530e",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "obj.isAttestation"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "If there is an active registration flow, it will be canceled"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "finishNode-a65b5b32-0e7a-4e00-b6bb-1bc31db2aa59",
+			"type": "finishNode",
+			"position": {
+				"x": 3280,
+				"y": 1040
+			},
+			"data": {
+				"id": "finishNode-a65b5b32-0e7a-4e00-b6bb-1bc31db2aa59",
+				"type": "finishNode",
+				"position": {
+					"x": 3280,
+					"y": 1040
+				},
+				"previousNodeId": "assignmentNode-0bf63689-2a14-4e2b-b737-bdaf53e913ba",
+				"agamaData": {
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Ends the flow by replying to the user's inum",
+					"flowfilename": "",
+					"returnVariable": "{ userId: inum, response: nicknameTrigger }",
+					"finishMode": "withSuccess",
+					"nodeIcon": "material-symbols:line-end-square-rounded"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "whenNode-67a6ed6d-ec53-443e-822d-d0e54c7fb0d1",
+			"type": "whenNode",
+			"position": {
+				"x": 2780,
+				"y": 840
+			},
+			"data": {
+				"id": "whenNode-67a6ed6d-ec53-443e-822d-d0e54c7fb0d1",
+				"type": "whenNode",
+				"position": {
+					"x": 2780,
+					"y": 840
+				},
+				"previousNodeId": "whenNode-f4dc3df0-9610-40da-ae22-757bec2d04e0",
+				"branching": "continue",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "E",
+							"operator": "is not",
+							"dataValue": "null",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 110,
+				"height": 59
+			}
+		},
+		{
+			"id": "assignmentNode-5d3bd0a0-4735-48ab-8c18-94df6fde15db",
+			"type": "assignmentNode",
+			"position": {
+				"x": 3030,
+				"y": 1240
+			},
+			"data": {
+				"id": "assignmentNode-5d3bd0a0-4735-48ab-8c18-94df6fde15db",
+				"type": "assignmentNode",
+				"position": {
+					"x": 3030,
+					"y": 1240
+				},
+				"previousNodeId": "whenNode-67a6ed6d-ec53-443e-822d-d0e54c7fb0d1",
+				"branching": "success",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "obj.isAttestation"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "obj.showError"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Passkey registration failed.\"",
+							"assignedVariableName": "obj.errorTitle"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "E.message",
+							"assignedVariableName": "obj.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Show error with detail obtained from verify method"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "whenNode-b892664e-1128-4a7c-87f2-8de98024971b",
+			"type": "whenNode",
+			"position": {
+				"x": 2280,
+				"y": 240
+			},
+			"data": {
+				"id": "whenNode-b892664e-1128-4a7c-87f2-8de98024971b",
+				"type": "whenNode",
+				"position": {
+					"x": 2280,
+					"y": 240
+				},
+				"previousNodeId": "whenNode-d9cc2399-91bc-4949-8d37-f033df3f402f",
+				"branching": "continue",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "addDeviceForm.cancelBtn",
+							"operator": "is",
+							"dataValue": "\"\"",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 110,
+				"height": 59
+			}
+		},
+		{
+			"id": "finishNode-f8d870c4-ad95-4c6c-9618-7c6d26618745",
+			"type": "finishNode",
+			"position": {
+				"x": 2530,
+				"y": 1440
+			},
+			"data": {
+				"id": "finishNode-f8d870c4-ad95-4c6c-9618-7c6d26618745",
+				"type": "finishNode",
+				"position": {
+					"x": 2530,
+					"y": 1440
+				},
+				"previousNodeId": "whenNode-b892664e-1128-4a7c-87f2-8de98024971b",
+				"branching": "success",
+				"agamaData": {
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Ends the flow because the user cancels it",
+					"flowfilename": "",
+					"returnVariable": "Cancel event",
+					"finishMode": "withFailure",
+					"nodeIcon": "material-symbols:line-end-square-rounded"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		},
+		{
+			"id": "finishNode-6a89308c-da6f-4476-abbb-b6c4be3883c4",
+			"type": "finishNode",
+			"position": {
+				"x": 1280,
+				"y": 40
+			},
+			"data": {
+				"id": "finishNode-6a89308c-da6f-4476-abbb-b6c4be3883c4",
+				"type": "finishNode",
+				"position": {
+					"x": 1280,
+					"y": 40
+				},
+				"previousNodeId": "repeatNode-085372ff-15da-4057-9d16-54ba4b0ca35c",
+				"branching": "continue",
+				"agamaData": {
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Finish with error, because the limit of attempts was exceeded.",
+					"flowfilename": "",
+					"returnVariable": "Passkey registration attempt exceeded.",
+					"finishMode": "withFailure",
+					"nodeIcon": "material-symbols:line-end-square-rounded"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			}
+		}
+	],
+	"edges": [
+		{
+			"id": "startNode-3ad285be-8d2f-4408-80c3-c551ca8464eb-assignmentNode-ba6afe09-4572-4300-b9c2-c5ce64263b36",
+			"type": "default",
+			"source": "startNode-3ad285be-8d2f-4408-80c3-c551ca8464eb",
+			"target": "assignmentNode-ba6afe09-4572-4300-b9c2-c5ce64263b36",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_startNode-3ad285be-8d2f-4408-80c3-c551ca8464eb"
+		},
+		{
+			"id": "assignmentNode-ba6afe09-4572-4300-b9c2-c5ce64263b36-callNode-18dad2da-25fc-4f15-9834-70d64889eb5f",
+			"type": "default",
+			"source": "assignmentNode-ba6afe09-4572-4300-b9c2-c5ce64263b36",
+			"target": "callNode-18dad2da-25fc-4f15-9834-70d64889eb5f",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-ba6afe09-4572-4300-b9c2-c5ce64263b36"
+		},
+		{
+			"id": "callNode-18dad2da-25fc-4f15-9834-70d64889eb5f-assignmentNode-b5f61e1f-9c54-41e4-a998-d5f5fc3670cd",
+			"type": "default",
+			"source": "callNode-18dad2da-25fc-4f15-9834-70d64889eb5f",
+			"target": "assignmentNode-b5f61e1f-9c54-41e4-a998-d5f5fc3670cd",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-18dad2da-25fc-4f15-9834-70d64889eb5f"
+		},
+		{
+			"id": "assignmentNode-b5f61e1f-9c54-41e4-a998-d5f5fc3670cd-repeatNode-085372ff-15da-4057-9d16-54ba4b0ca35c",
+			"type": "default",
+			"source": "assignmentNode-b5f61e1f-9c54-41e4-a998-d5f5fc3670cd",
+			"target": "repeatNode-085372ff-15da-4057-9d16-54ba4b0ca35c",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-b5f61e1f-9c54-41e4-a998-d5f5fc3670cd"
+		},
+		{
+			"id": "repeatNode-085372ff-15da-4057-9d16-54ba4b0ca35c-rrfNode-ebb40f46-2a36-495c-94cb-bff9eae3d740",
+			"type": "default",
+			"source": "repeatNode-085372ff-15da-4057-9d16-54ba4b0ca35c",
+			"target": "rrfNode-ebb40f46-2a36-495c-94cb-bff9eae3d740",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "repeat",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_repeatNode-085372ff-15da-4057-9d16-54ba4b0ca35c_repeat"
+		},
+		{
+			"id": "rrfNode-ebb40f46-2a36-495c-94cb-bff9eae3d740-whenNode-e86f606c-c99b-4bfd-9a29-70c63bbeaba9",
+			"type": "default",
+			"source": "rrfNode-ebb40f46-2a36-495c-94cb-bff9eae3d740",
+			"target": "whenNode-e86f606c-c99b-4bfd-9a29-70c63bbeaba9",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_rrfNode-ebb40f46-2a36-495c-94cb-bff9eae3d740"
+		},
+		{
+			"id": "whenNode-e86f606c-c99b-4bfd-9a29-70c63bbeaba9-callNode-82f696ec-dfdf-4f6b-8d41-a02cc8d80dc4",
+			"type": "default",
+			"source": "whenNode-e86f606c-c99b-4bfd-9a29-70c63bbeaba9",
+			"target": "callNode-82f696ec-dfdf-4f6b-8d41-a02cc8d80dc4",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-e86f606c-c99b-4bfd-9a29-70c63bbeaba9_success"
+		},
+		{
+			"id": "callNode-82f696ec-dfdf-4f6b-8d41-a02cc8d80dc4-assignmentNode-85d1da27-039e-4496-b09e-7a9e01162617",
+			"type": "default",
+			"source": "callNode-82f696ec-dfdf-4f6b-8d41-a02cc8d80dc4",
+			"target": "assignmentNode-85d1da27-039e-4496-b09e-7a9e01162617",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-82f696ec-dfdf-4f6b-8d41-a02cc8d80dc4"
+		},
+		{
+			"id": "whenNode-e86f606c-c99b-4bfd-9a29-70c63bbeaba9-whenNode-505a0094-c14f-4e8c-be8b-751c7a18bcc9",
+			"type": "default",
+			"source": "whenNode-e86f606c-c99b-4bfd-9a29-70c63bbeaba9",
+			"target": "whenNode-505a0094-c14f-4e8c-be8b-751c7a18bcc9",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-e86f606c-c99b-4bfd-9a29-70c63bbeaba9_continue"
+		},
+		{
+			"id": "whenNode-505a0094-c14f-4e8c-be8b-751c7a18bcc9-assignmentNode-762c2c44-07ff-4d90-9ace-6bf8ae8ca7af",
+			"type": "default",
+			"source": "whenNode-505a0094-c14f-4e8c-be8b-751c7a18bcc9",
+			"target": "assignmentNode-762c2c44-07ff-4d90-9ace-6bf8ae8ca7af",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-505a0094-c14f-4e8c-be8b-751c7a18bcc9_success"
+		},
+		{
+			"id": "whenNode-505a0094-c14f-4e8c-be8b-751c7a18bcc9-whenNode-d9cc2399-91bc-4949-8d37-f033df3f402f",
+			"type": "default",
+			"source": "whenNode-505a0094-c14f-4e8c-be8b-751c7a18bcc9",
+			"target": "whenNode-d9cc2399-91bc-4949-8d37-f033df3f402f",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-505a0094-c14f-4e8c-be8b-751c7a18bcc9_continue"
+		},
+		{
+			"id": "whenNode-d9cc2399-91bc-4949-8d37-f033df3f402f-callNode-1ed62280-f5e1-4450-99f5-b9672010526a",
+			"type": "default",
+			"source": "whenNode-d9cc2399-91bc-4949-8d37-f033df3f402f",
+			"target": "callNode-1ed62280-f5e1-4450-99f5-b9672010526a",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-d9cc2399-91bc-4949-8d37-f033df3f402f_success"
+		},
+		{
+			"id": "callNode-1ed62280-f5e1-4450-99f5-b9672010526a-whenNode-f4dc3df0-9610-40da-ae22-757bec2d04e0",
+			"type": "default",
+			"source": "callNode-1ed62280-f5e1-4450-99f5-b9672010526a",
+			"target": "whenNode-f4dc3df0-9610-40da-ae22-757bec2d04e0",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-1ed62280-f5e1-4450-99f5-b9672010526a"
+		},
+		{
+			"id": "whenNode-f4dc3df0-9610-40da-ae22-757bec2d04e0-triggerNode-25a5060c-cdda-495b-bf64-64317ffe530e",
+			"type": "default",
+			"source": "whenNode-f4dc3df0-9610-40da-ae22-757bec2d04e0",
+			"target": "triggerNode-25a5060c-cdda-495b-bf64-64317ffe530e",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-f4dc3df0-9610-40da-ae22-757bec2d04e0_success"
+		},
+		{
+			"id": "triggerNode-25a5060c-cdda-495b-bf64-64317ffe530e-assignmentNode-0bf63689-2a14-4e2b-b737-bdaf53e913ba",
+			"type": "default",
+			"source": "triggerNode-25a5060c-cdda-495b-bf64-64317ffe530e",
+			"target": "assignmentNode-0bf63689-2a14-4e2b-b737-bdaf53e913ba",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_triggerNode-25a5060c-cdda-495b-bf64-64317ffe530e"
+		},
+		{
+			"id": "assignmentNode-0bf63689-2a14-4e2b-b737-bdaf53e913ba-finishNode-a65b5b32-0e7a-4e00-b6bb-1bc31db2aa59",
+			"type": "default",
+			"source": "assignmentNode-0bf63689-2a14-4e2b-b737-bdaf53e913ba",
+			"target": "finishNode-a65b5b32-0e7a-4e00-b6bb-1bc31db2aa59",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-0bf63689-2a14-4e2b-b737-bdaf53e913ba"
+		},
+		{
+			"id": "whenNode-f4dc3df0-9610-40da-ae22-757bec2d04e0-whenNode-67a6ed6d-ec53-443e-822d-d0e54c7fb0d1",
+			"type": "default",
+			"source": "whenNode-f4dc3df0-9610-40da-ae22-757bec2d04e0",
+			"target": "whenNode-67a6ed6d-ec53-443e-822d-d0e54c7fb0d1",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-f4dc3df0-9610-40da-ae22-757bec2d04e0_continue"
+		},
+		{
+			"id": "whenNode-67a6ed6d-ec53-443e-822d-d0e54c7fb0d1-assignmentNode-5d3bd0a0-4735-48ab-8c18-94df6fde15db",
+			"type": "default",
+			"source": "whenNode-67a6ed6d-ec53-443e-822d-d0e54c7fb0d1",
+			"target": "assignmentNode-5d3bd0a0-4735-48ab-8c18-94df6fde15db",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-67a6ed6d-ec53-443e-822d-d0e54c7fb0d1_success"
+		},
+		{
+			"id": "whenNode-d9cc2399-91bc-4949-8d37-f033df3f402f-whenNode-b892664e-1128-4a7c-87f2-8de98024971b",
+			"type": "default",
+			"source": "whenNode-d9cc2399-91bc-4949-8d37-f033df3f402f",
+			"target": "whenNode-b892664e-1128-4a7c-87f2-8de98024971b",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-d9cc2399-91bc-4949-8d37-f033df3f402f_continue"
+		},
+		{
+			"id": "whenNode-b892664e-1128-4a7c-87f2-8de98024971b-finishNode-f8d870c4-ad95-4c6c-9618-7c6d26618745",
+			"type": "default",
+			"source": "whenNode-b892664e-1128-4a7c-87f2-8de98024971b",
+			"target": "finishNode-f8d870c4-ad95-4c6c-9618-7c6d26618745",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-b892664e-1128-4a7c-87f2-8de98024971b_success"
+		},
+		{
+			"id": "repeatNode-085372ff-15da-4057-9d16-54ba4b0ca35c-finishNode-6a89308c-da6f-4476-abbb-b6c4be3883c4",
+			"type": "default",
+			"source": "repeatNode-085372ff-15da-4057-9d16-54ba4b0ca35c",
+			"target": "finishNode-6a89308c-da6f-4476-abbb-b6c4be3883c4",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_repeatNode-085372ff-15da-4057-9d16-54ba4b0ca35c_continue"
+		}
+	],
+	"viewport": {
+		"x": -56.5,
+		"y": 77.25,
+		"zoom": 0.5
+	}
 }
