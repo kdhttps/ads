@@ -20,7 +20,8 @@
             "co.otp": {},
             "co.coin": {},
             "co.iterate": {},
-            "co.test": {}
+            "co.test": {},
+            "org.gluu.agama.passkey.add": {}
         },
         "name": "agama-simple-password"
     }
